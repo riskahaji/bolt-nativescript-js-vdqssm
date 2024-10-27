@@ -1,0 +1,19 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Report Incident">
+        <NavigationButton text="Back" android.systemIcon="ic_menu_back" />
+    </ActionBar>
+    
+    <ScrollView>
+        <StackLayout class="p-4">
+            <TextField hint="Source" text="{{ source }}" class="input p-4 mb-4 rounded-lg bg-white" />
+            <TextField hint="Actor" text="{{ actor }}" class="input p-4 mb-4 rounded-lg bg-white" />
+            <TextField hint="Target" text="{{ target }}" class="input p-4 mb-4 rounded-lg bg-white" />
+            <TextField hint="Type" text="{{ type }}" class="input p-4 mb-4 rounded-lg bg-white" />
+            <TextView hint="Description" text="{{ description }}" class="input p-4 mb-4 rounded-lg bg-white" height="100" />
+            <TextField hint="Location" text="{{ location }}" class="input p-4 mb-4 rounded-lg bg-white" />
+            <TextField hint="Casualties" text="{{ casualties }}" keyboardType="number" class="input p-4 mb-4 rounded-lg bg-white" />
+            
+            <Button text="Submit" tap="{{ onSubmit }}" class="btn btn-primary bg-blue-600 text-white p-4 rounded-lg" />
+        </StackLayout>
+    </ScrollView>
+</Page>
